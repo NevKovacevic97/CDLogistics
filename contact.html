@@ -19,12 +19,7 @@
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("cy4GqJ3RokxbBWMh2");
-   })();
-</script>
-<body>
+
 
     <div id="navbar">
 
@@ -50,17 +45,7 @@
       </p>
     </form>
 
-    <form>
-      <h1 style="text-align:left;color:black;text-shadow: 1px 1px 2px white; ">POSALJITE PORUKU</h1>
-      <input type="text" placeholder="Name" id="name" required>
-      <input type="email" placeholder="Email" id="email" required>
-      <input type="text" placeholder="Subject" id="subject" required>
-      <textarea id="message" placeholder="message" cols="30" rows="10"></textarea>
-      <button type="submit" onclick="sendMail()">POSALJI</button>
-
-
-
-  </form>
+   
     <!-- Image of location/map 
     <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px"> -->
   </div>
@@ -76,19 +61,7 @@
         $("#footer").load("footer.html");
         });
 
-        function sendMail(){
-
-let parms=
-{
-name:document.getElementById("name").value,
-email:document.getElementById("email").value,
-subject:document.getElementById("subject").value,
-message:document.getElementById("message").value,
-
-
-}
-emailjs.send("service_so1xyig","template_l195g9g",parms).then(alert("Email sent!"))
-}
+  
     </script>
     
 </html>
