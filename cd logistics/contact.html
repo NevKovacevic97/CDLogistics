@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Contact</title>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -40,13 +40,13 @@
     <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +1 773-273-7783</p>
     <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: recruiting@cdlogistics.info</p>
     <br>
-    <form action="/action_page.php" target="_blank">
+    <form  target="_blank">
       <p><input class="w3-input w3-border" type="text" id="name" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-border" type="text" id="email" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-border" type="text"  id="subject" placeholder="Subject" required name="Subject"></p>
       <p><input class="w3-input w3-border" type="text" id="message" placeholder="Message" required name="Message"></p>
       <p>
-        <button class="w3-button " style="background-color:#f3af1d"type="submit">
+        <button class="w3-button "onclick="sendMail()" style="background-color:#f3af1d"type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
@@ -81,7 +81,7 @@ message:document.getElementById("message").value,
 
 
 }
-emailjs.send("sservice_lf9sjzc","template_uosl7hm",parms).then(alert("Email sent!"))
+emailjs.send("service_lf9sjzc","template_uosl7hm",parms).then(alert("Email sent!"))
 }
 
 
